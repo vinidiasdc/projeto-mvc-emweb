@@ -4,8 +4,16 @@
     ViewData["Title"] = "Create";
 }
 
+@if (TempData["InvalidCPF"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["InvalidCPF"]
+    </div>
+}
+
 <h4>Cadastro de Aluno</h4>
 <hr />
+
 <div class="row">
     <div class="col-md-5">
         <form asp-action="Create" >
@@ -44,6 +52,8 @@
         
     </div>
 </div>
+
+
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

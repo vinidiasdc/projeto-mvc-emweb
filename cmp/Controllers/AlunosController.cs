@@ -72,7 +72,8 @@ namespace EM.Web.Controllers
             }
             else
             {
-                return RedirectToAction("CPFInvalido", "Erros");
+                TempData["InvalidCPF"] = "Informe um cpf válido!";
+                return View();
             }
 
         }
@@ -99,7 +100,8 @@ namespace EM.Web.Controllers
             }
             else
             {
-                return RedirectToAction("CPFInvalido", "Erros");
+                TempData["InvalidCPF"] = "Informe um cpf válido!";
+                return View();
             }
 
         }
