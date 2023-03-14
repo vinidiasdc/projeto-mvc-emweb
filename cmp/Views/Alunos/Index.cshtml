@@ -1,0 +1,105 @@
+﻿@model IEnumerable<EM.Domain.Entidades.Aluno>
+
+@{
+    ViewData["Title"] = "Sistema de Alunos";
+}
+
+@if(TempData["MessageError"] != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @TempData["MessageError"]
+    </div>
+}
+
+<header>
+    <div>
+        <h1>Alunos</h1>
+        <a id="btn-adicionar" class="btn btn-primary" asp-controller="Alunos" asp-action="Create">Adicionar Aluno</a>
+    </div>
+    <hr />
+</header>
+<section id="buscas">
+    <form asp-action="Index">
+        <div id="inputs-busca">
+            <h7 id="titulo-head-opcoes">Opção de busca: </h7>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="radio-button-nome" name="tipoBusca" value="Nome" class="form-check-input" checked />
+                <label class="form-check-label" for="radio-button-nome">Nome</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" id="radio-button-matricula" name="tipoBusca" value="Matricula" class="form-check-input" />
+                <label class="form-check-label" for="radio-button-matricula">Matrícula</label>
+            </div>
+        </div>
+
+        <div id="secao-busca" class="input-group mb-3">
+            <input type="text" id="txt-pesquisa" name="conteudoBusca" class="form-control" placeholder="Nome do usuário ou matrícula" aria-label="Nome do usuário ou matrícula" aria-describedby="basic-addon2" required>
+            <div class="input-group-append">
+                <button type="submit" class="btn btn-outline-primary">Buscar</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<section id="conteudo-tabela-alunos" class="table-responsive">
+    <table class="table table-striped table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Matrícula</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Data de Nascimento</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var aluno in Model)
+            {
+                <tr>
+                    <td>@aluno.Matricula</td>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.Sexo</td>
+                    <td>@aluno.Nascimento.ToString("dd/MM/yyyy")</td>
+                    <td>@aluno.Cpf</td>
+                    <td>
+                        <div id="botoes-opcoes" class="d-flex justify-content-around">
+                            <a id="btn-editar" href="@Url.Action("Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">Editar</a>
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-excluir" data-bs-whatever="@aluno.Matricula, @aluno.Nome, @aluno.Sexo, @aluno.Nascimento.ToShortDateString(), @aluno.Cpf">
+                                Excluir
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-excluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir Aluno</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Tem certeza que deseja excluir o aluno a seguir:</p>
+                <div>
+                    <div>Matricula: <b><span id="matricula"></span></b> </div>
+                    <div>Nome: <b><span id="nome"></span></b> </div>
+                    <div>Sexo: <b><span id="sexo"></span></b> </div>
+                    <div>Nascimento: <b><span id="nascimento"></span></b> </div>
+                    <div>Cpf: <b><span id="cpf"></span></b> </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <a id="btn-excluir-permanente" role="button" class="btn btn-danger">Excluir</a>
+            </div>
+        </div>
+    </div>
+</div>
+

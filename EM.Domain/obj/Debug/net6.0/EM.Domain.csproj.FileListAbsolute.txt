@@ -1,0 +1,12 @@
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.csproj.AssemblyReference.cache
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.AssemblyInfoInputs.cache
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.AssemblyInfo.cs
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\bin\Debug\net6.0\EM.Domain.deps.json
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\bin\Debug\net6.0\EM.Domain.dll
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\bin\Debug\net6.0\EM.Domain.pdb
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.dll
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\refint\EM.Domain.dll
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\EM.Domain.pdb
+C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Domain\obj\Debug\net6.0\ref\EM.Domain.dll

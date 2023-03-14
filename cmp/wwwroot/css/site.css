@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+/*My Configs*/
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+button#btn-adicionar {
+    height: 40px;
+}
+
+div#inputs-busca {
+    margin-bottom: 5px;
+}
+
+div#botoes-opcoes {
+    display: flex;
+    justify-content: center;
+}
+
+#titulo-head-opcoes {
+    font-weight: bold; 
+    margin-right: 10px;
+}
+
+/*End*/
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
