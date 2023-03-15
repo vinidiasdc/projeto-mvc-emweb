@@ -59,52 +59,38 @@ namespace EM.Web.Controllers
         }
 
         [HttpGet]
-        public ActionResult Create()
+        public IActionResult Create_Edit(int matricula)
         {
-            return View();
+            if (matricula == 0)
+            {
+                return View();
+            } else
+            {
+                var aluno = _repository.GetByMatricula(matricula);
+                return View(aluno);
+            }
+            
         }
 
         [HttpPost]
-        public ActionResult Create(Aluno aluno)
+        public IActionResult Create_Edit(Aluno aluno)
         {
-            if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
+            if (aluno.Matricula == 0)
             {
                 _repository.Add(aluno);
                 return RedirectToAction("Index");
             }
             else
             {
-                TempData["InvalidCPF"] = "Informe um cpf válido!";
-                return View();
-            }
-
-        }
-
-        [HttpGet]
-        public ActionResult Edit(int matricula)
-        {
-            var a = _repository.GetByMatricula(matricula);
-
-            if (a == null)
-            {
-                return RedirectToAction("Index");
-            }
-
-            return View(a);
-        }
-
-        [HttpPost]
-        public ActionResult Edit(Aluno aluno)
-        {
-            if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
-            {
-                _repository.Update(aluno);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                TempData["InvalidCPF"] = "Informe um cpf válido!";
-                return View();
+                if(CpfCnpjUtils.IsValid(aluno.Cpf) == true)
+                {
+                    _repository.Update(aluno);
+                    return RedirectToAction("Index");
+                } else
+                {
+                    TempData["InvalidCPF"] = "Informe um cpf válido!";
+                    return View();
+                }
             }
 
         }

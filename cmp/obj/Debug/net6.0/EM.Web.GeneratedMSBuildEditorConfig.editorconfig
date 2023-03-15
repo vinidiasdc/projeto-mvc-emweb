@@ -16,12 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\cmp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXENyZWF0ZS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEVkaXQuY3NodG1s
+[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Create_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXENyZWF0ZV9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Index.cshtml]

@@ -18,7 +18,7 @@
 <header>
     <div>
         <h1>Alunos</h1>
-        <a id="btn-adicionar" class="btn btn-primary" asp-controller="Alunos" asp-action="Create">
+        <a id="btn-adicionar" class="btn btn-primary" asp-controller="Alunos" asp-action="Create_Edit">
             <img src="imgs/add.png" style="margin-bottom: 3px;" />
             Adicionar Aluno
         </a>
@@ -71,7 +71,7 @@
                     <td>@aluno.Cpf</td>
                     <td>
                         <div id="botoes-opcoes" class="d-flex justify-content-around">
-                            <a id="btn-editar" href="@Url.Action("Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">
+                            <a id="btn-editar" href="@Url.Action("Create_Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">
                                 <img style="margin-bottom: 3px;" src="imgs/edit.png" />
                                 Editar
                             </a>

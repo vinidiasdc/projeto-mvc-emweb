@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BBtC7rwYDSYnH/pPZVEyo+tD7ulfHJ6GeW0sRmH2NZ0=",
+  "Hash": "sP7BvBfV1eh95W9xcPXxnCD33qs+at+RNQYnKLwaZm4=",
   "Source": "EM.Web",
   "BasePath": "_content/EM.Web",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\imgs\\add.png",
+      "SourceId": "EM.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\",
+      "BasePath": "_content/EM.Web",
+      "RelativePath": "imgs/add.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imgs\\add.png"
     },
     {
       "Identity": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\imgs\\delete.png",
