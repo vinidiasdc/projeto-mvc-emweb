@@ -1,5 +1,5 @@
 ﻿@model IEnumerable<EM.Domain.Entidades.Aluno>
-
+@using EM.Domain.Services
 @{
     ViewData["Title"] = "Sistema de Alunos";
 }
@@ -65,7 +65,7 @@
             {
                 <tr>
                     <td>@aluno.Matricula</td>
-                    <td class="alinhar-esquerda">@aluno.Nome</td>
+                    <td class="alinhar-esquerda">@aluno.Nome?.ToPadraoFormal()</td>
                     <td>@aluno.Sexo</td>
                     <td>@aluno.Nascimento.ToString("dd/MM/yyyy")</td>
                     <td>@aluno.Cpf</td>

@@ -49,7 +49,7 @@ namespace EM.Domain.Entidades
 
         public override string ToString()
         {
-            return $"GEN_ID(GEN_TBALUNOS, 1),'{Nome}','{Sexo}','{Nascimento:yyyy-MM-dd}','{Cpf}'";
+            return $"GEN_ID(GEN_TBALUNOS, 1),'{Nome?.ToLower()}','{Sexo}','{Nascimento:yyyy-MM-dd}','{Cpf}'";
         }
 
 

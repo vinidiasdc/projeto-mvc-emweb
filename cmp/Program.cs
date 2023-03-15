@@ -1,6 +1,7 @@
 using EM.Domain.Conexao;
 using EM.Domain.Entidades;
 using EM.Domain.Enums;
+using EM.Domain.Services;
 using EM.Repository;
 using EM.Web.Controllers;
 using System.Collections.Generic;
@@ -22,10 +23,6 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
-
-Aluno a1 = new Aluno();
-Console.WriteLine(a1);
 
 
 app.UseHttpsRedirection();

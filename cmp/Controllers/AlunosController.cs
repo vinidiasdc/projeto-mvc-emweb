@@ -29,7 +29,7 @@ namespace EM.Web.Controllers
             switch (tipoBusca)
             {
                 case "Nome":
-                    return View(_repository.GetByContendoNoNome(conteudoBusca));
+                    return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
                 case "Matricula":
                     try
                     {
