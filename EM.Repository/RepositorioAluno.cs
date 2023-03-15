@@ -42,11 +42,11 @@ namespace EM.Repository
                 while (reader.Read())
                 {
                     Aluno aluno = new Aluno();
-                    aluno.Matricula = Convert.ToInt32(reader["MATRICULA"]);
-                    aluno.Nome = reader["NOME"].ToString();
-                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader["SEXO"].ToString());
-                    aluno.Nascimento = Convert.ToDateTime(reader["DATANASCIMENTO"].ToString());
-                    aluno.Cpf = reader["CPF"].ToString();
+                    aluno.Matricula = reader.GetInt32(0);
+                    aluno.Nome = reader.GetString(1);
+                    aluno.Sexo = (EnumeradorSexo) Enum.Parse(typeof(EnumeradorSexo), reader.GetString(2));
+                    aluno.Nascimento = reader.GetDateTime(3);
+                    aluno.Cpf = reader.GetString(4);
                     Alunos.Add(aluno);
                 }
                 return Alunos;
@@ -98,7 +98,7 @@ namespace EM.Repository
             {
                 aluno.Matricula = Convert.ToInt32(dtbAlunoID.Rows[0][0].ToString());
                 aluno.Nome = dtbAlunoID.Rows[0][1].ToString();
-                aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), dtbAlunoID.Rows[0][2].ToString());
+                aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), dtbAlunoID.Rows[0][2].ToString() ?? "Masculino");
                 aluno.Nascimento = Convert.ToDateTime(dtbAlunoID.Rows[0][3].ToString());
                 aluno.Cpf = dtbAlunoID.Rows[0][4].ToString();
             }
@@ -116,11 +116,11 @@ namespace EM.Repository
                 while (reader.Read())
                 {
                     Aluno aluno = new Aluno();
-                    aluno.Matricula = Convert.ToInt32(reader["MATRICULA"]);
-                    aluno.Nome = reader["NOME"].ToString();
-                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader["SEXO"].ToString());
-                    aluno.Nascimento = Convert.ToDateTime(reader["DATANASCIMENTO"].ToString());
-                    aluno.Cpf = reader["CPF"].ToString();
+                    aluno.Matricula = reader.GetInt32(0);
+                    aluno.Nome = reader.GetString(1);
+                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader.GetString(2));
+                    aluno.Nascimento = reader.GetDateTime(3);
+                    aluno.Cpf = reader.GetString(4);
                     Alunos.Add(aluno);
                 }
                 return Alunos.Where(predicate);
@@ -147,11 +147,11 @@ namespace EM.Repository
                 Aluno aluno = new();
                 while (reader.Read())
                 {
-                    aluno.Matricula = Convert.ToInt32(reader["MATRICULA"]);
-                    aluno.Nome = reader["NOME"].ToString();
-                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader["SEXO"].ToString());
-                    aluno.Nascimento = DateTime.Parse(reader["DATANASCIMENTO"].ToString());
-                    aluno.Cpf = reader["CPF"].ToString();
+                    aluno.Matricula = reader.GetInt32(0);
+                    aluno.Nome = reader.GetString(1);
+                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader.GetString(2));
+                    aluno.Nascimento = reader.GetDateTime(3);
+                    aluno.Cpf = reader.GetString(4);
                 }
                 
                 return aluno;
@@ -180,11 +180,11 @@ namespace EM.Repository
                 while (reader.Read())
                 {
                     Aluno aluno = new Aluno();
-                    aluno.Matricula = Convert.ToInt32(reader["MATRICULA"]);
-                    aluno.Nome = reader["NOME"].ToString();
-                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader["SEXO"].ToString());
-                    aluno.Nascimento = Convert.ToDateTime(reader["DATANASCIMENTO"].ToString());
-                    aluno.Cpf = reader["CPF"].ToString();
+                    aluno.Matricula = reader.GetInt32(0);
+                    aluno.Nome = reader.GetString(1);
+                    aluno.Sexo = (EnumeradorSexo)Enum.Parse(typeof(EnumeradorSexo), reader.GetString(2));
+                    aluno.Nascimento = reader.GetDateTime(3);
+                    aluno.Cpf = reader.GetString(4);
                     Alunos.Add(aluno);
                 }
                 return Alunos;

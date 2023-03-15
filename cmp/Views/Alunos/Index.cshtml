@@ -9,12 +9,19 @@
     <div class="alert alert-danger" role="alert">
         @TempData["MessageError"]
     </div>
+} else if(TempData["MatriculaInexistente"] != null) {
+    <div class="alert alert-warning" role="alert">
+        @TempData["MatriculaInexistente"]
+    </div>
 }
 
 <header>
     <div>
         <h1>Alunos</h1>
-        <a id="btn-adicionar" class="btn btn-primary" asp-controller="Alunos" asp-action="Create">Adicionar Aluno</a>
+        <a id="btn-adicionar" class="btn btn-primary" asp-controller="Alunos" asp-action="Create">
+            <img src="imgs/add.png" style="margin-bottom: 3px;" />
+            Adicionar Aluno
+        </a>
     </div>
     <hr />
 </header>
@@ -42,7 +49,7 @@
 </section>
 
 <section id="conteudo-tabela-alunos" class="table-responsive">
-    <table class="table table-striped table-sm">
+    <table class="table table-striped table-sm alinhar-meio">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Matrícula</th>
@@ -58,14 +65,18 @@
             {
                 <tr>
                     <td>@aluno.Matricula</td>
-                    <td>@aluno.Nome</td>
+                    <td class="alinhar-esquerda">@aluno.Nome</td>
                     <td>@aluno.Sexo</td>
                     <td>@aluno.Nascimento.ToString("dd/MM/yyyy")</td>
                     <td>@aluno.Cpf</td>
                     <td>
                         <div id="botoes-opcoes" class="d-flex justify-content-around">
-                            <a id="btn-editar" href="@Url.Action("Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">Editar</a>
+                            <a id="btn-editar" href="@Url.Action("Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">
+                                <img style="margin-bottom: 3px;" src="imgs/edit.png" />
+                                Editar
+                            </a>
                             <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-excluir" data-bs-whatever="@aluno.Matricula, @aluno.Nome, @aluno.Sexo, @aluno.Nascimento.ToShortDateString(), @aluno.Cpf">
+                                <img style="margin-bottom: 3px;" src="imgs/delete.png" />
                                 Excluir
                             </button>
                         </div>

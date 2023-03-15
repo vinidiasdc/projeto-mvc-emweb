@@ -25,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Cpf" class="control-label"></label>
-                <input asp-for="Cpf" class="form-control" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="___.___.___-__" maxlength="14" />
+                <input asp-for="Cpf" class="form-control" oninput="mascara(this)"/>
             </div>
             <div class="form-group">
                 <label asp-for="Nascimento" class="control-label"></label>

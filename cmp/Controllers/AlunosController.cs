@@ -40,6 +40,7 @@ namespace EM.Web.Controllers
 
                         if (ConvertidoAlunoUnico[0].Nome == null)
                         {
+                            TempData["MatriculaInexistente"] = "Matrícula informada não existe no banco";
                             return RedirectToAction("Index");
                         }
 
@@ -62,6 +63,7 @@ namespace EM.Web.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult Create(Aluno aluno)
         {
@@ -77,6 +79,7 @@ namespace EM.Web.Controllers
             }
 
         }
+
         [HttpGet]
         public ActionResult Edit(int matricula)
         {

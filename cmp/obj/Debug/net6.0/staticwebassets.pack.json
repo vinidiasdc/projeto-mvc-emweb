@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\imgs\\delete.png",
+      "PackagePath": "staticwebassets\\imgs\\delete.png"
+    },
+    {
+      "Id": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\imgs\\edit.png",
+      "PackagePath": "staticwebassets\\imgs\\edit.png"
+    },
+    {
       "Id": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

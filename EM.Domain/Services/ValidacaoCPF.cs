@@ -7,7 +7,7 @@ namespace EM.Domain.Services
 {
     public static class CpfCnpjUtils
     {
-        public static bool IsValid(string cpf)
+        public static bool IsValid(string? cpf)
         {
             if(cpf == null) return true;
             if (cpf == "00000000000000") return false;

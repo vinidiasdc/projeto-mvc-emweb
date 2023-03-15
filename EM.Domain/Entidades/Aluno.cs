@@ -7,29 +7,28 @@ using System.Text;
 using System.ComponentModel;
 using System.Configuration;
 using System.Globalization;
+using System.Runtime.CompilerServices;
 
 namespace EM.Domain.Entidades
 {
-    [Table("ALUNOS")]
+
     public class Aluno : IEntidade
     {
-        private Random _random = new Random();
 
         [Key]
         public int Matricula { get; set; }
-        [Required(ErrorMessage = "Campo obirgatório!")]
+        [Required(ErrorMessage = "Informe seu nome")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Nome deve conter de 3 a 100 caracteres!")]
         public string? Nome { get; set; }
         [AllowNull]
         public string? Cpf { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Informe sua data de nascimento")]
         public DateTime Nascimento { get; set; }
         [Required]
         public EnumeradorSexo Sexo { get; set; }
 
         public Aluno()
         {
-            Matricula = _random.Next(0,100000);
             Nascimento = DateTime.Today;
         }
 
@@ -50,7 +49,7 @@ namespace EM.Domain.Entidades
 
         public override string ToString()
         {
-            return $"{Matricula},'{Nome}','{Sexo}','{Nascimento.ToString("yyyy-MM-dd")}','{Cpf}'";
+            return $"GEN_ID(GEN_TBALUNOS, 1),'{Nome}','{Sexo}','{Nascimento:yyyy-MM-dd}','{Cpf}'";
         }
 
 

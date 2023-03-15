@@ -34,6 +34,13 @@ div#botoes-opcoes {
     margin-right: 10px;
 }
 
+.alinhar-meio {
+    text-align: center;
+}
+.alinhar-esquerda {
+    text-align: left;
+}
+
 /*End*/
 html {
     position: relative;
