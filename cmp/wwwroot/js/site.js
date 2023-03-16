@@ -15,7 +15,6 @@ if (exampleModal) {
     exampleModal.addEventListener('show.bs.modal', event => {
 
         const button = event.relatedTarget
-
         const recipient = button.getAttribute('data-bs-whatever')
 
         let arrayAluno = recipient.split(',')
@@ -38,7 +37,6 @@ if (exampleModal) {
         spanNASC.textContent = nascimento
         spanCPF.textContent = cpf
 
-        const modalTitle = exampleModal.querySelector('.modal-title')
         const modalBodyInput = exampleModal.querySelector('.modal-body input')
         const btn_deletar = document.querySelector("a#btn-excluir-permanente")
         btn_deletar.setAttribute('href', 'Alunos/Delete/' + matricula)
@@ -67,8 +65,9 @@ function mascara(i) {
 var alert1 = document.getElementById("alert-erro-selecao");
 var alert2 = document.getElementById("alert-erro-matricula");
 var alert3 = document.getElementById("alert-cpf-invalido");
+var alert4 = document.getElementById("alert-erro-nome");
 
-if (alert1 || alert2 || alert3) {
+if (alert1 || alert2 || alert3 || alert4) {
     exibirAlerts();
 }
 
@@ -83,5 +82,9 @@ function exibirAlerts() {
 
     setTimeout(function () {
         alert3.classList.add("d-none");
+    }, 4000);
+
+    setTimeout(function () {
+        alert4.classList.add("d-none");
     }, 4000);
 }

@@ -1,6 +1,7 @@
 ﻿using EM.Domain.Entidades;
 using EM.Domain.Services;
 using EM.Repository;
+using EM.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EM.Web.Controllers
@@ -20,6 +21,20 @@ namespace EM.Web.Controllers
             switch (tipoBusca)
             {
                 case "Nome":
+                    try
+                    {
+                        if (int.TryParse(conteudoBusca, out int resultado))
+                        {
+                            TempData["NomeInvalido"] = "Informe um nome na busca";
+                            return View(_repository.GetAll());
+                        }
+                        else
+                        {
+                            return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
+                        }
+                    }
+                    catch (FormatException) { }
+                    
                     return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
                 case "Matricula":
 
@@ -72,7 +87,7 @@ namespace EM.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Aluno aluno)
+        public IActionResult Create(AlunoModel aluno)
         {
             if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
             {
