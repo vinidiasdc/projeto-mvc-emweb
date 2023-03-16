@@ -1,8 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
+﻿/* Ajustes nos elementos da tabela */
 document.querySelectorAll('th').forEach(function (el) {
     el.classList.add('align-middle');
 });
@@ -47,7 +43,7 @@ exampleModal.addEventListener('show.bs.modal', event => {
     modalBodyInput.value = recipient
 })
 
-
+/* Mascara do cpf */
 function mascara(i) {
 
     var v = i.value;
@@ -63,3 +59,20 @@ function mascara(i) {
 
 }
 
+/* Eventos para os alerts */
+var alert1 = document.getElementById("alert-erro-selecao");
+var alert2 = document.getElementById("alert-erro-matricula");
+
+if (alert1 || alert2) {
+    exibirAlerts();
+}
+
+function exibirAlerts() {
+    setTimeout(function () {
+        alert1.classList.add("d-none");
+    }, 3500);
+
+    setTimeout(function () {
+        alert2.classList.add("d-none");
+    }, 3500);
+}

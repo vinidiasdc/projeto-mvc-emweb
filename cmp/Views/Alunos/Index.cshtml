@@ -7,11 +7,11 @@
 <!-- Tratamento de exeções do controller Alunos-->
 @if(TempData["MessageError"] != null)
 {
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert" id="alert-erro-selecao"on>
         @TempData["MessageError"]
     </div>
 } else if(TempData["MatriculaInexistente"] != null) {
-    <div class="alert alert-warning" role="alert">
+    <div class="alert alert-warning" role="alert" id="alert-erro-matricula">
         @TempData["MatriculaInexistente"]
     </div>
 }
@@ -73,7 +73,7 @@
                     <td>@aluno.Cpf</td>
                     <td>
                         <div id="botoes-opcoes" class="d-flex justify-content-around">
-                            <a id="btn-editar" href="@Url.Action("Create_Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">
+                            <a id="btn-editar" href="@Url.Action("Edit", "Alunos", new {@matricula=@aluno.Matricula} )" class="btn btn-secondary">
                                 <img style="margin-bottom: 3px;" src="imgs/edit.png" />
                                 Editar
                             </a>

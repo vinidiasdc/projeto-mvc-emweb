@@ -1,16 +1,7 @@
-﻿using cmp.Controllers;
-using EM.Domain.Conexao;
-using EM.Domain.Entidades;
+﻿using EM.Domain.Entidades;
 using EM.Domain.Services;
 using EM.Repository;
-using FirebirdSql.Data.FirebirdClient;
-using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Security.Cryptography;
 
 namespace EM.Web.Controllers
 {
@@ -52,48 +43,70 @@ namespace EM.Web.Controllers
                         TempData["MessageError"] = "Por favor, informe um número para seleção em matrícula!";
                         return View(_repository.GetAll());
                     }
-                    
+
                 default:
                     return View(_repository.GetAll());
             }
         }
+
 
         [HttpGet]
         public IActionResult Create_Edit(int matricula)
         {
             if (matricula == 0)
             {
-                return View();
-            } else
-            {
-                var aluno = _repository.GetByMatricula(matricula);
-                aluno.Nome = aluno.Nome?.ToPadraoFormal();
-                return View(aluno);
+                return RedirectToAction("Create");
             }
-            
+            else
+            {
+                return View();
+            }
+
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            TempData["OPERACAO"] = "Create";
+            return View("Create_Edit");
         }
 
         [HttpPost]
-        public IActionResult Create_Edit(Aluno aluno)
+        public IActionResult Create(Aluno aluno)
         {
-            
-            if (aluno.Matricula == 0)
+            if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
             {
                 _repository.Add(aluno);
                 return RedirectToAction("Index");
             }
             else
             {
-                
-                if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
-                {
-                    _repository.Update(aluno);
-                    return RedirectToAction("Index");
-                } else
-                {
-                    TempData["InvalidCPF"] = "Informe um cpf válido!";
-                    return View();
-                }
+                TempData["InvalidCPF"] = "Informe um cpf válido!";
+                return View("Create_Edit");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int matricula)
+        {
+            TempData["OPERACAO"] = "Edit";
+            Aluno aluno = _repository.GetByMatricula(matricula);
+            return View("Create_Edit", aluno);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Aluno aluno)
+        {
+
+            if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
+            {
+                _repository.Update(aluno);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["InvalidCPF"] = "Informe um cpf válido!";
+                return View("Create_Edit");
             }
 
         }

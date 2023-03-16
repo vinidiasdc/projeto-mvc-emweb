@@ -24,7 +24,7 @@ else
 
 <div class="row">
     <div class="col-md-5">
-        <form asp-action="Create_Edit">
+        <form asp-action="@TempData["OPERACAO"]">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @if(Model?.Matricula > 0)
             {
