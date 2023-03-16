@@ -9523,23 +9523,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Escolar Manager\\.nuget\\packages\\": {},
+    "C:\\Users\\vinid\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj",
+      "projectUniqueName": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj",
       "projectName": "EM.Web",
-      "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj",
-      "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\obj\\",
+      "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj",
+      "packagesPath": "C:\\Users\\vinid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vinid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9548,17 +9548,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {
-              "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj"
+            "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {
+              "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj"
             },
-            "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj": {
-              "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj"
+            "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj": {
+              "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj"
             }
           }
         }
@@ -9609,7 +9610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -9618,7 +9619,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Mvc 5.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'Microsoft.AspNet.Mvc 5.2.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "Microsoft.AspNet.Mvc",
       "targetGraphs": [
         "net6.0"
@@ -9628,7 +9629,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Razor 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'Microsoft.AspNet.Razor 3.2.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "Microsoft.AspNet.Razor",
       "targetGraphs": [
         "net6.0"
@@ -9638,7 +9639,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.WebPages 3.2.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'Microsoft.AspNet.WebPages 3.2.9' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "Microsoft.AspNet.WebPages",
       "targetGraphs": [
         "net6.0"
@@ -9648,7 +9649,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.Web.Infrastructure 1.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "O pacote 'Microsoft.Web.Infrastructure 1.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
       "libraryId": "Microsoft.Web.Infrastructure",
       "targetGraphs": [
         "net6.0"

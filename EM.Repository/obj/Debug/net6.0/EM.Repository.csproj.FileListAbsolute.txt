@@ -13,3 +13,18 @@ C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Reposi
 C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Repository\obj\Debug\net6.0\refint\EM.Repository.dll
 C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Repository\obj\Debug\net6.0\EM.Repository.pdb
 C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\EM.Repository\obj\Debug\net6.0\ref\EM.Repository.dll
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\bin\Debug\net6.0\EM.Repository.deps.json
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\bin\Debug\net6.0\EM.Repository.dll
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\bin\Debug\net6.0\EM.Repository.pdb
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\bin\Debug\net6.0\EM.Domain.dll
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\bin\Debug\net6.0\EM.Domain.pdb
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.csproj.AssemblyReference.cache
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.AssemblyInfoInputs.cache
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.AssemblyInfo.cs
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.csproj.CoreCompileInputs.cache
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.csproj.CopyComplete
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.dll
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\refint\EM.Repository.dll
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\EM.Repository.pdb
+C:\Users\vinid\Source\Repos\projeto-mvc-emweb\EM.Repository\obj\Debug\net6.0\ref\EM.Repository.dll

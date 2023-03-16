@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = EM.Web
 build_property.RootNamespace = EM.Web
-build_property.ProjectDir = C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\cmp\
+build_property.ProjectDir = C:\Users\vinid\Source\Repos\projeto-mvc-emweb\cmp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\Escolar Manager\Documents\Arquivos Vinicius\MeuRepoOnline\cmp\cmp
+build_property.MSBuildProjectDirectory = C:\Users\vinid\Source\Repos\projeto-mvc-emweb\cmp
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Create_Edit.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Alunos/Create_Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXENyZWF0ZV9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Alunos/Index.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Alunos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Home/Index.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Shared/Error.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/_ViewImports.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/_ViewStart.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Escolar Manager/Documents/Arquivos Vinicius/MeuRepoOnline/cmp/cmp/Views/Shared/_Layout.cshtml]
+[C:/Users/vinid/Source/Repos/projeto-mvc-emweb/cmp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-p2nnb9e34l

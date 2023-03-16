@@ -67,6 +67,7 @@ namespace EM.Web.Controllers
             } else
             {
                 var aluno = _repository.GetByMatricula(matricula);
+                aluno.Nome = aluno.Nome?.ToPadraoFormal();
                 return View(aluno);
             }
             
@@ -75,6 +76,7 @@ namespace EM.Web.Controllers
         [HttpPost]
         public IActionResult Create_Edit(Aluno aluno)
         {
+            
             if (aluno.Matricula == 0)
             {
                 _repository.Add(aluno);
@@ -82,7 +84,8 @@ namespace EM.Web.Controllers
             }
             else
             {
-                if(CpfCnpjUtils.IsValid(aluno.Cpf) == true)
+                
+                if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
                 {
                     _repository.Update(aluno);
                     return RedirectToAction("Index");
