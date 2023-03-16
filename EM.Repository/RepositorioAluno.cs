@@ -1,6 +1,7 @@
 ﻿using EM.Domain.Conexao;
 using EM.Domain.Entidades;
 using EM.Domain.Enums;
+using EM.Domain.Services;
 using FirebirdSql.Data.FirebirdClient;
 using System.Data;
 
@@ -88,7 +89,7 @@ namespace EM.Repository
                 _conexao.Open();
                 FbDataAdapter fbDados = new FbDataAdapter("UPDATE ALUNOS SET NOME=@NOME, SEXO=@SEXO, DATANASCIMENTO=@DATANASCIMENTO, CPF=@CPF WHERE MATRICULA = @MATRICULA", _conexao);
                 fbDados.SelectCommand.Parameters.AddWithValue("@MATRICULA", aluno.Matricula);
-                fbDados.SelectCommand.Parameters.AddWithValue("@NOME", aluno.Nome);
+                fbDados.SelectCommand.Parameters.AddWithValue("@NOME", aluno.Nome?.ToLower());
                 fbDados.SelectCommand.Parameters.AddWithValue("@SEXO", aluno.Sexo);
                 fbDados.SelectCommand.Parameters.AddWithValue("@DATANASCIMENTO", Convert.ToDateTime(aluno.Nascimento));
                 fbDados.SelectCommand.Parameters.AddWithValue("@CPF", aluno.Cpf);

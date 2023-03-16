@@ -14,7 +14,7 @@ else
 <!-- Operações inválidas nos inputs -->
 @if (TempData["InvalidCPF"] != null)
 {
-    <div class="alert alert-danger" role="alert">
+    <div class="alert alert-danger" role="alert" id="alert-cpf-invalido">
         @TempData["InvalidCPF"]
     </div>
 }
@@ -24,7 +24,7 @@ else
 
 <div class="row">
     <div class="col-md-5">
-        <form asp-action="@TempData["OPERACAO"]">
+        <form asp-action="@TempData["ACAO"]">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @if(Model?.Matricula > 0)
             {

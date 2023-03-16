@@ -77,7 +77,7 @@
                                 <img style="margin-bottom: 3px;" src="imgs/edit.png" />
                                 Editar
                             </a>
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-excluir" data-bs-whatever="@aluno.Matricula, @aluno.Nome, @aluno.Sexo, @aluno.Nascimento.ToShortDateString(), @aluno.Cpf">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-excluir" data-bs-whatever="@aluno.Matricula, @aluno.Nome?.ToPadraoFormal(), @aluno.Sexo, @aluno.Nascimento.ToShortDateString(), @aluno.Cpf">
                                 <img style="margin-bottom: 3px;" src="imgs/delete.png" />
                                 Excluir
                             </button>

@@ -67,7 +67,7 @@ namespace EM.Web.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            TempData["OPERACAO"] = "Create";
+            TempData["ACAO"] = "Create";
             return View("Create_Edit");
         }
 
@@ -89,8 +89,11 @@ namespace EM.Web.Controllers
         [HttpGet]
         public IActionResult Edit(int matricula)
         {
-            TempData["OPERACAO"] = "Edit";
+            TempData["ACAO"] = "Edit";
+
             Aluno aluno = _repository.GetByMatricula(matricula);
+            aluno.Nome = aluno.Nome?.ToPadraoFormal();
+
             return View("Create_Edit", aluno);
         }
 

@@ -8,40 +8,44 @@ document.querySelectorAll('td').forEach(function (el) {
 });
 
 
-const exampleModal = document.getElementById('modal-excluir')
-exampleModal.addEventListener('show.bs.modal', event => {
+/*Modal*/
 
-    const button = event.relatedTarget
+const exampleModal = document.getElementById('modal-excluir');
+if (exampleModal) {
+    exampleModal.addEventListener('show.bs.modal', event => {
 
-    const recipient = button.getAttribute('data-bs-whatever')
+        const button = event.relatedTarget
 
-    let arrayAluno = recipient.split(',')
+        const recipient = button.getAttribute('data-bs-whatever')
 
-    let matricula = arrayAluno[0]
-    let nome = arrayAluno[1]
-    let sexo = arrayAluno[2]
-    let nascimento = arrayAluno[3]
-    let cpf = arrayAluno[4]
+        let arrayAluno = recipient.split(',')
 
-    let spanMAT = document.getElementById("matricula")
-    let spanNOME = document.getElementById("nome")
-    let spanSEXO = document.getElementById("sexo")
-    let spanNASC = document.getElementById("nascimento")
-    let spanCPF = document.getElementById("cpf")
+        let matricula = arrayAluno[0]
+        let nome = arrayAluno[1]
+        let sexo = arrayAluno[2]
+        let nascimento = arrayAluno[3]
+        let cpf = arrayAluno[4]
 
-    spanMAT.textContent = matricula
-    spanNOME.textContent = nome
-    spanSEXO.textContent = sexo
-    spanNASC.textContent = nascimento
-    spanCPF.textContent = cpf
+        let spanMAT = document.getElementById("matricula")
+        let spanNOME = document.getElementById("nome")
+        let spanSEXO = document.getElementById("sexo")
+        let spanNASC = document.getElementById("nascimento")
+        let spanCPF = document.getElementById("cpf")
 
-    const modalTitle = exampleModal.querySelector('.modal-title')
-    const modalBodyInput = exampleModal.querySelector('.modal-body input')
-    const btn_deletar = document.querySelector("a#btn-excluir-permanente")
-    btn_deletar.setAttribute('href', 'Alunos/Delete/' + matricula)
+        spanMAT.textContent = matricula
+        spanNOME.textContent = nome
+        spanSEXO.textContent = sexo
+        spanNASC.textContent = nascimento
+        spanCPF.textContent = cpf
 
-    modalBodyInput.value = recipient
-})
+        const modalTitle = exampleModal.querySelector('.modal-title')
+        const modalBodyInput = exampleModal.querySelector('.modal-body input')
+        const btn_deletar = document.querySelector("a#btn-excluir-permanente")
+        btn_deletar.setAttribute('href', 'Alunos/Delete/' + matricula)
+
+        modalBodyInput.value = recipient
+    })
+}
 
 /* Mascara do cpf */
 function mascara(i) {
@@ -62,17 +66,22 @@ function mascara(i) {
 /* Eventos para os alerts */
 var alert1 = document.getElementById("alert-erro-selecao");
 var alert2 = document.getElementById("alert-erro-matricula");
+var alert3 = document.getElementById("alert-cpf-invalido");
 
-if (alert1 || alert2) {
+if (alert1 || alert2 || alert3) {
     exibirAlerts();
 }
 
 function exibirAlerts() {
     setTimeout(function () {
         alert1.classList.add("d-none");
-    }, 3500);
+    }, 4000);
 
     setTimeout(function () {
         alert2.classList.add("d-none");
-    }, 3500);
+    }, 4000);
+
+    setTimeout(function () {
+        alert3.classList.add("d-none");
+    }, 4000);
 }
