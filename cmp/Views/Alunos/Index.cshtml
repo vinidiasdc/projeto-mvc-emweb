@@ -4,6 +4,7 @@
     ViewData["Title"] = "Sistema de Alunos";
 }
 
+<!-- Tratamento de exeções do controller Alunos-->
 @if(TempData["MessageError"] != null)
 {
     <div class="alert alert-danger" role="alert">
@@ -25,6 +26,7 @@
     </div>
     <hr />
 </header>
+
 <section id="buscas">
     <form asp-action="Index">
         <div id="inputs-busca">

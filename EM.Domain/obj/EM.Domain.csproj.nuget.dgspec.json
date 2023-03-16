@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {}
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj",
         "projectName": "EM.Domain",
-        "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj",
-        "packagesPath": "C:\\Users\\vinid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj",
+        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vinid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

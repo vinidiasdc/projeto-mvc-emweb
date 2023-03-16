@@ -31,6 +31,7 @@ namespace EM.Web.Controllers
                 case "Nome":
                     return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
                 case "Matricula":
+
                     try
                     {
                         List<Aluno> ConvertidoAlunoUnico = new List<Aluno>
@@ -38,7 +39,7 @@ namespace EM.Web.Controllers
                         _repository.GetByMatricula(Convert.ToInt32(conteudoBusca))
                         };
 
-                        if (ConvertidoAlunoUnico[0].Nome == null)
+                        if (ConvertidoAlunoUnico[0].Matricula == 0)
                         {
                             TempData["MatriculaInexistente"] = "Matrícula informada não existe no banco";
                             return RedirectToAction("Index");
@@ -48,10 +49,9 @@ namespace EM.Web.Controllers
                     }
                     catch (FormatException)
                     {
-                        TempData["MessageError"] = "Por favor informe um número para seleção em matrícula!";
+                        TempData["MessageError"] = "Por favor, informe um número para seleção em matrícula!";
                         return View(_repository.GetAll());
                     }
-                    
                     
                 default:
                     return View(_repository.GetAll());

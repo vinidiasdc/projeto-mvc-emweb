@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "UEirG9zqafS9MIK70RIaROJISzvIyPcylheowUnK/GxdMbgc7fuww6T2CoAeJ+LL30ItUoMBy9AIjMWqFCziOg==",
+  "dgSpecHash": "1B04iQ1ib0mPp9AvY0L7e6acrg+rRucDwRk4QQJzjoGlhPRklnpg44pu7qkFOBDeOEoYmf+5tcCREAcD9eOmTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\vinid\\.nuget\\packages\\firebirdsql.data.firebirdclient\\9.1.1\\firebirdsql.data.firebirdclient.9.1.1.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
-    "C:\\Users\\vinid\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\firebirdsql.data.firebirdclient\\9.1.1\\firebirdsql.data.firebirdclient.9.1.1.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.0\\system.configuration.configurationmanager.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Escolar Manager\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

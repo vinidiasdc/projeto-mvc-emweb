@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj": {}
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj": {
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj",
         "projectName": "EM.Web",
-        "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\EM.Web.csproj",
-        "packagesPath": "C:\\Users\\vinid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\cmp\\obj\\",
+        "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\EM.Web.csproj",
+        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\cmp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vinid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,18 +26,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {
-                "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj"
+              "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {
+                "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj"
               },
-              "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj": {
-                "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj"
+              "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj": {
+                "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj"
               }
             }
           }
@@ -59,14 +58,6 @@
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.2.9, )"
-            },
-            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
-              "target": "Package",
-              "version": "[6.0.0, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[6.0.13, )"
             }
           },
           "imports": [
@@ -88,24 +79,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj",
         "projectName": "EM.Domain",
-        "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj",
-        "packagesPath": "C:\\Users\\vinid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj",
+        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vinid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -114,7 +105,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -162,24 +152,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj": {
+    "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj",
         "projectName": "EM.Repository",
-        "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\EM.Repository.csproj",
-        "packagesPath": "C:\\Users\\vinid\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Repository\\obj\\",
+        "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\EM.Repository.csproj",
+        "packagesPath": "C:\\Users\\Escolar Manager\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\vinid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Escolar Manager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -188,15 +178,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj": {
-                "projectPath": "C:\\Users\\vinid\\Source\\Repos\\projeto-mvc-emweb\\EM.Domain\\EM.Domain.csproj"
+              "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj": {
+                "projectPath": "C:\\Users\\Escolar Manager\\Documents\\Arquivos Vinicius\\MeuRepoOnline\\cmp\\EM.Domain\\EM.Domain.csproj"
               }
             }
           }
@@ -226,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

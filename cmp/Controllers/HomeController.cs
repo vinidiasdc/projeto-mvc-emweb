@@ -17,14 +17,7 @@ namespace cmp.Controllers
 
         public IActionResult Index()
         {
-            RepositorioAluno repo = new RepositorioAluno();
-
-            return View(repo.GetAll());
-        }
-
-        public IActionResult Cadastro()
-        {
-            return RedirectToAction("Alunos", "Create");
+            return RedirectToAction("Index", "Alunos");
         }
 
     }

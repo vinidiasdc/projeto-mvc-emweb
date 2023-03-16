@@ -18,19 +18,8 @@ namespace EM.Domain.Conexao
 
         public FbConnection getConexao()
         {
-            string conn = "User=SYSDBA;Password=masterkey;Database=C:\\Banco_EX\\DB_ALUNOS.FDB;DataSource=localhost;Port=3050;Dialect=3;";
-            string conn2 = "User=SYSDBA;Password=masterkey;Database=C:\\Banco_EX\\DB_ALUNOS.FDB;DataSource=localhost;Port=3054;Dialect=3;";
-
-            FbConnection conexao1 = new FbConnection(conn);
-            if(conexao1 == null)
-            {
-                FbConnection conexao2 = new FbConnection(conn2);
-                return conexao2;
-            } else {
-                return conexao1;
-            }
-
-            
+            string conn = "User=SYSDBA;Password=masterkey;Database=C:\\Banco_EX\\DB_ALUNOS.FDB;DataSource=localhost;Port=3054;Dialect=3;";
+            return new FbConnection(conn);
         }
  
     }
