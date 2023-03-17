@@ -18,7 +18,7 @@ namespace EM.Domain.Entidades
         [Key]
         public int Matricula { get; set; }
         [Required(ErrorMessage = "Informe seu nome")]
-        [RegularExpression(@"^[a-zA-ZÀ-ÿ\s]*$", ErrorMessage = "O campo Nome deve conter apenas letras.")]
+        [RegularExpression(@"^(?!\s*$)[a-zA-ZÀ-ÿ\s]*$", ErrorMessage = "O campo Nome deve conter apenas letras.")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Nome deve conter de 3 a 100 caracteres!")]
         public string? Nome { get; set; }
         [AllowNull]

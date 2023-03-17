@@ -38,7 +38,7 @@ namespace EM.Repository
             {
                 _conexao.Open();
 
-                FbCommand cmd = new FbCommand($"SELECT MATRICULA, NOME, SEXO, DATANASCIMENTO, CPF FROM ALUNOS;", _conexao);
+                FbCommand cmd = new FbCommand($"SELECT MATRICULA, NOME, SEXO, DATANASCIMENTO, CPF FROM ALUNOS ORDER BY MATRICULA;", _conexao);
                 FbDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {

@@ -23,21 +23,19 @@ namespace EM.Web.Controllers
                 case "Nome":
                         return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
                 case "Matricula":
-
+                    
                     try
                     {
-                        List<Aluno> ConvertidoAlunoUnico = new List<Aluno>
-                        {
-                        _repository.GetByMatricula(Convert.ToInt32(conteudoBusca))
-                        };
+                        var dados = _repository.Get(x => x.Matricula == int.Parse(conteudoBusca));
+                        IEnumerator<Aluno> enumerador = dados.GetEnumerator();
 
-                        if (ConvertidoAlunoUnico[0].Matricula == 0)
+                        if (!(enumerador.MoveNext()))
                         {
                             TempData["MatriculaInexistente"] = "Matrícula informada não existe no banco";
                             return RedirectToAction("Index");
                         }
 
-                        return View(ConvertidoAlunoUnico);
+                        return View(dados);
                     }
                     catch (FormatException)
                     {
@@ -77,6 +75,7 @@ namespace EM.Web.Controllers
             
             if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
             {
+                aluno.Nome = aluno.Nome?.Trim();
                 _repository.Add(aluno);
                 return RedirectToAction("Index");
             }
@@ -103,6 +102,7 @@ namespace EM.Web.Controllers
 
             if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
             {
+                aluno.Nome = aluno.Nome?.Trim();
                 _repository.Update(aluno);
                 return RedirectToAction("Index");
             }
