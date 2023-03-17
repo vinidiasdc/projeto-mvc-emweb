@@ -21,21 +21,7 @@ namespace EM.Web.Controllers
             switch (tipoBusca)
             {
                 case "Nome":
-                    try
-                    {
-                        if (int.TryParse(conteudoBusca, out int resultado))
-                        {
-                            TempData["NomeInvalido"] = "Informe um nome na busca";
-                            return View(_repository.GetAll());
-                        }
-                        else
-                        {
-                            return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
-                        }
-                    }
-                    catch (FormatException) { }
-                    
-                    return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
+                        return View(_repository.GetByContendoNoNome(conteudoBusca.ToLower()));
                 case "Matricula":
 
                     try
@@ -82,13 +68,13 @@ namespace EM.Web.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            TempData["ACAO"] = "Create";
             return View("Create_Edit");
         }
 
         [HttpPost]
         public IActionResult Create(AlunoModel aluno)
         {
+            
             if (CpfCnpjUtils.IsValid(aluno.Cpf) == true)
             {
                 _repository.Add(aluno);
@@ -99,13 +85,12 @@ namespace EM.Web.Controllers
                 TempData["InvalidCPF"] = "Informe um cpf válido!";
                 return View("Create_Edit");
             }
+
         }
 
         [HttpGet]
         public IActionResult Edit(int matricula)
         {
-            TempData["ACAO"] = "Edit";
-
             Aluno aluno = _repository.GetByMatricula(matricula);
             aluno.Nome = aluno.Nome?.ToPadraoFormal();
 
@@ -124,7 +109,7 @@ namespace EM.Web.Controllers
             else
             {
                 TempData["InvalidCPF"] = "Informe um cpf válido!";
-                return View("Create_Edit");
+                return View("Create_Edit", aluno);
             }
 
         }

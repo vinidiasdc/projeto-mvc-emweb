@@ -72,19 +72,21 @@ if (alert1 || alert2 || alert3 || alert4) {
 }
 
 function exibirAlerts() {
-    setTimeout(function () {
-        alert1.classList.add("d-none");
-    }, 4000);
-
-    setTimeout(function () {
-        alert2.classList.add("d-none");
-    }, 4000);
-
-    setTimeout(function () {
-        alert3.classList.add("d-none");
-    }, 4000);
-
-    setTimeout(function () {
-        alert4.classList.add("d-none");
-    }, 4000);
+    if (alert1) {
+        setTimeout(function () {
+            alert1.classList.add("d-none");
+        }, 4000);
+    } else if (alert2) {
+        setTimeout(function () {
+            alert2.classList.add("d-none");
+        }, 4000);
+    } else if (alert3) {
+        setTimeout(function () {
+            alert3.classList.add("d-none");
+        }, 4000);
+    } else {
+        setTimeout(function () {
+            alert4.classList.add("d-none");
+        }, 4000);
+    }
 }

@@ -5,10 +5,12 @@
 @if (Model == null)
 {
     ViewData["Title"] = "Cadastrar Aluno";
+    ViewData["ACAO"] = "Create";
 }
 else
 {
     ViewData["Title"] = "Editar Aluno";
+    ViewData["ACAO"] = "Edit";
 }
 
 <!-- Operações inválidas nos inputs -->
@@ -18,13 +20,19 @@ else
         @TempData["InvalidCPF"]
     </div>
 }
+else if (TempData["NomeInvalido"] != null)
+{
+    <div class="alert alert-danger" role="alert" id="alert-cpf-invalido">
+        @TempData["NomeInvalido"]
+    </div>
+}
 
 <h4>@ViewData["Title"]</h4>
 <hr />
 
 <div class="row">
     <div class="col-md-5">
-        <form asp-action="@TempData["ACAO"]">
+        <form asp-action=@ViewData["ACAO"]>
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             @if(Model?.Matricula > 0)
             {

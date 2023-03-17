@@ -18,6 +18,7 @@ namespace EM.Domain.Entidades
         [Key]
         public int Matricula { get; set; }
         [Required(ErrorMessage = "Informe seu nome")]
+        [RegularExpression(@"^[a-zA-ZÀ-ÿ\s]*$", ErrorMessage = "O campo Nome deve conter apenas letras.")]
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Nome deve conter de 3 a 100 caracteres!")]
         public string? Nome { get; set; }
         [AllowNull]
@@ -49,7 +50,7 @@ namespace EM.Domain.Entidades
 
         public override string ToString()
         {
-            return $"GEN_ID(GEN_TBALUNOS, 1),'{Nome?.ToLower()}','{Sexo}','{Nascimento:yyyy-MM-dd}','{Cpf}'";
+            return $"'{Nome?.ToLower()}','{Sexo}','{Nascimento:yyyy-MM-dd}','{Cpf}'";
         }
 
 

@@ -18,7 +18,7 @@ namespace EM.Repository
             try
             {
                 _conexao.Open();
-                FbCommand cmd = new FbCommand($"INSERT INTO ALUNOS (MATRICULA, NOME, SEXO, DATANASCIMENTO, CPF) VALUES({aluno});", _conexao);
+                FbCommand cmd = new FbCommand($"INSERT INTO ALUNOS (MATRICULA, NOME, SEXO, DATANASCIMENTO, CPF) VALUES(GEN_ID(GEN_TBALUNOS, 1),{aluno});", _conexao);
                 cmd.ExecuteNonQuery();
             }
             catch (FbException ex)
